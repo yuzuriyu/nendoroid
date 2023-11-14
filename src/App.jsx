@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ProductContextProvider from "./context/productContext";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <Hero />
       <Products />
+      <Footer />
     </ProductContextProvider>
   );
 };

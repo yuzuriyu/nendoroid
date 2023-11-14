@@ -253,7 +253,367 @@ https://www.goodsmile.info/en/product/14580/`,
     series: "hololive production",
     productType: "Cannot be Combined",
     specifications:
-      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height..",
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 9,
+    name: "figma Mori Calliope",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h92/h60/9473467154462.jpg",
+    details: `From hololive English comes a figma of Mori Calliope!
+· Using the smooth yet posable joints of figma, you can create a variety of poses.
+· A flexible plastic is used for important areas, allowing proportions to be kept without compromising posability.
+· She comes with three face plates including a smiling face, a winking face and a funny face.
+· Her scythe, a microphone, a miniature figure of Death-sensei and a pair of sunglasses are included as optional parts.
+· An articulated figma stand is included to display the figma in a variety of poses.
+© 2016 COVER Corp.
+Good Smile Company - figma Mori Calliope
+https://www.goodsmile.info/en/product/14157/
+`,
+    highlight: "Excuse My Rudeness, But Could You Please RIP?",
+    orderPeriod:
+      "Preorders can be placed from 19th May 2023 (Fri) from 12:00pm JST until 29th June 2023 (Thu) at 12:00pm JST.",
+    price: 11000,
+    releaseDate: "Nov 2023",
+    announceDate: "Mar 28, 2023",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Bonus Included Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 150mm in height.",
+    available: true,
+  },
+  {
+    id: 10,
+    name: "【Preorder Campaign】Nendoroid Shirakami Fubuki (Rerelease)",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/ha7/h07/9488587522078.jpg",
+    details: `Product Details
+Good foxy day! I'm Shirakami Fubuki!
+From the popular VTuber group "hololive production" comes a rerelease of the Nendoroid of the white-haired animal-eared otaku fox Shirakami Fubuki!
+She comes with three face plates including a standard face, a smiling face and an enamored face.
+Miniature figures of Fubuchun and Oruyanke, a cob of corn and a bottle of tea are included as optional parts!
+Her ponytail and tail are articulated and she even comes with a set of interchangeable bent ear parts! Enjoy creating all kinds of cute poses!
+Be sure to add her to your collection!
+
+special Nendoroid parts set (drink + hand parts) will be attached as a bonus when purchasing during preorder dates. Click here for more details.
+
+※[Nendoroid pre-order campaign] The exclusive parts is limited to customer who pro-order this item during below period
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Shirakami Fubuki
+https://www.goodsmile.info/en/product/12309/`,
+    highlight: "Good foxy day! I'm Shirakami Fubuki!",
+    orderPeriod:
+      "Preorders can be placed from 19th May 2023 (Fri) from 12:00pm JST until 29th June 2023 (Thu) at 12:00pm JST.",
+    price: 7699,
+    releaseDate: "Nov 2023",
+    announceDate: "May 19, 2023",
+    manufacturer: "TOYTEC",
+    series: "hololive production",
+    productType: "Rerelease Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 11,
+    name: "Nendoroid Tsunomaki Watame",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h75/hdb/9465851314206.jpg",
+    details: `From the popular VTuber group "hololive production" comes a Nendoroid of hololive 4th Generation VTuber Tsunomaki Watame!
+
+Face plates:
+· Smiling face
+· Grinning face
+· Pressuring face
+
+Optional parts:
+· Harp
+· Microphone
+· Rock-paper-scissors sign
+· Other optional parts for different poses.
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Tsunomaki Watame
+https://www.goodsmile.info/en/product/14037/`,
+    highlight: "Hoof, hoof, helloof! Watame did nothing wrong!",
+    orderPeriod:
+      "Preorders can be placed from 28th February 2023 (Tue) from 12:00pm JST until 13th April 2023 (Thu) at 12:00pm JST.",
+    price: 6600,
+    releaseDate: "Jul 2023",
+    announceDate: "Feb 28, 2023",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 12,
+    name: "Nendoroid Sakura Miko (Rerelease)",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h18/h80/9464992399390.jpg",
+    details: `From the popular VTuber group "hololive production" comes a Nendoroid of the elite shrine maiden Sakura Miko!
+She comes with three face plates including a standard expression, a surprised expression and an angry expression. Optional parts include her pet shikigami Kintoki, a 35P miniature figure, a bucket of lava that fans will surely recognize and a pair of sunglasses! She also comes with an interchangeably baby body part to create her holobaby appearance! Be sure to add the elite Sakura Miko to your collection!
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Sakura Miko
+https://www.goodsmile.info/en/product/11999/`,
+    highlight: `“Nya-hello! I'm the elite shrine maiden of hololive, Sakura Miko!"`,
+    orderPeriod:
+      "Preorders can be placed from 24th February 2023 (Fri) from 12:00pm JST until 13th April 2023 (Thu) at 12:00pm JST.",
+    price: 6800,
+    releaseDate: "Jul 2023",
+    announceDate: "Feb 24, 2023",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Rerelease Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 13,
+    name: "figma Houshou Marine",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hc7/h04/9389455474718.jpg",
+    details: `From the popular VTuber group ""hololive production"" comes a figma action figure of hololive 3rd Generation VTuber Houshou Marine! · She comes with four face plates including a winking face, an aroused face, a depressed face and a wide-eyed face. · Her jacket, hat and Dokuro-kun are all included. · A front hair part with an eyepatch attached is included, and arm parts with articulated overly long sleeve are included as well. · An articulated figma stand is included to display the figma in a variety of poses.
+© 2016 COVER Corp.
+Good Smile Company - figma Houshou Marine
+https://www.goodsmile.info/en/product/13038/`,
+    highlight:
+      "Raise your voice, now let's set sail, we are the Houshou Pirates!",
+    orderPeriod: `Preorders can be placed from 29th July 2022 (Wed) from 12:00pm JST until 8th September 2022 (Thu) at 12:00pm JST.
+
+
+*Due to the limited amount of products that can be produced at our production facilities each month, a preorder limit has been placed on this item.
+*Preorders for this item may close during the preorder period if the production limit is reached.
+*In the event that the production limit is reached and preorders are closed during the preorder period, preorders may be opened again during the preorder period or for an additional preorder period in order to accommodate demand. Products preordered during an additional preorder period will be produced following the products made for the initial release, and as such, will be released at a later date.`,
+    price: 10800,
+    releaseDate: "Jul 2023",
+    announceDate: "Jul 29, 2022",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined Bonus Included Limited Quantity",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 135mm in height.",
+    available: false,
+  },
+  {
+    id: 14,
+    name: "Nendoroid Inugami Korone",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hee/hf1/9361900797982.jpg",
+    details: `Product Details
+"'Ello! Fingers! Give me your fingers!"
+From the popular VTuber agency "hololive production" comes a Nendoroid of hololive GAMERS VTuber Inugami Korone! She comes with three face plates including a standard face, a smiling face and a "yandere" face. Optional parts include a Koronesuki plastic sheet and a miniature figure of Hosoinu. She also comes with a loaf of French bread and a finger—both of which she can be posed holding with the use of interchangeable hand parts. Enjoy displaying her with the previously made available for preorder Nendoroid of Nekomata Okayu (sold separately)! Be sure to add her to your collection!
+
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Inugami Korone
+https://www.goodsmile.info/en/product/12601/`,
+    highlight: `"'Ello! Fingers! Give me your fingers!"`,
+    orderPeriod: "*Sales will end when product is sold out.",
+    price: 6200,
+    releaseDate: "Nov 2022",
+    announceDate: "Apr 28, 2022",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Rerelease Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 15,
+    name: "Nendoroid Nekomata Okayu",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h60/hf8/9359438250014.jpg",
+    details: `From the popular VTuber agency "hololive production" comes a Nendoroid of hololive GAMERS VTuber Nekomata Okayu! She comes with three face plates including a standard face, an alluring smiling face and a crying face. Optional parts include an onigiri rice ball, a miniature figure of Temanyan and a pair of sunglasses! She also comes with a special hand part for displaying her holding hands with Nendoroid Inugami Korone (sold separately), which is set to be made available for preorder soon! Be sure to add her to your collection!
+
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Nekomata Okayu
+https://www.goodsmile.info/en/product/12557/`,
+    highlight: `"Om, nom, Okayu!"`,
+    orderPeriod: "*Sales will end when product is sold out.",
+    price: 6200,
+    releaseDate: "Nov 2022",
+    announceDate: "Apr 21, 2022",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Rerelease Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 16,
+    name: "Nendoroid Usada Pekora",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/he2/h1f/9342720671774.jpg",
+    details: `From the popular VTuber group "hololive production" comes a Nendoroid of hololive 3rd Generation VTuber Usada Pekora! She comes with three face plates including a standard face, a winking face and an uneasy face. Optional parts include a Nousagi miniature figure, a microphone and a pair of sunglasses, allowing you to create all kinds of poses and situations in Nendoroid form! Be sure to add her to your collection!
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Usada Pekora
+https://www.goodsmile.info/en/product/12343/`,
+    highlight: `"Hiya-peko! Hiya-peko! Hiya-pekoooo! I'm Usada Pekora, peko!""`,
+    orderPeriod: "*Sales will end when product is sold out.",
+    price: 6200,
+    releaseDate: "Oct 2022",
+    announceDate: "Feb 18, 2022",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Rerelease Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 17,
+    name: "Nendoroid Gawr Gura (Second Release)",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h7f/hf8/9298046255134.jpg",
+    details: `From the popular VTuber group "hololive production" comes a second round of preorders for the Nendoroid of hololive English VTuber Gawr Gura! She comes with three interchangeable face plates including a standard expression and two different smiling expressions—one showing off her sharp teeth and one with closed eyes.
+
+She also comes with her buddy Bloop and her trident as optional parts. Gura's hood can be removed as well, so enjoy changing up her appearance to create all kinds of poses! Be sure to add her to your collection!
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Gawr Gura
+https://www.goodsmile.info/en/product/11616/`,
+    highlight: `Domo! Same desu!`,
+    orderPeriod: "*Sales will end when product is sold out.",
+    price: 5900,
+    releaseDate: "Aug 2022",
+    announceDate: "Sep 13, 2022",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Rerelease Online Exclusive",
+    specifications:
+      "Painted ABS&PVC non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 18,
+    name: "Nendoroid Yukihana Lamy",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hd8/h1b/9476707188766.jpg",
+    details: `From the popular VTuber group "hololive production" comes a Nendoroid of hololive 5th Generation VTuber Yukihana Lamy!
+Face plates:
+· Smiling face
+· Grinning face
+· Pressuring face
+
+Optional parts:
+· Daifuku miniature figure
+· Sake bottle
+· Game controller
+· Other optional parts for different poses.
+
+Special effect sheet will be attached as a bonus when purchasing during preorder dates. Click here for more details.
+
+※[Nendoroid pre-order campaign] The exclusive parts is limited to customer who pro-order this item during below period
+© 2016 COVER Corp.
+Good Smile Company - Nendoroid Yukihana Lamy
+https://www.goodsmile.info/en/product/14174/`,
+    highlight: "Lamyoohoo!",
+    orderPeriod: "*Sales will end when product is sold out.",
+    price: 6800,
+    releaseDate: "Sep 2023",
+    announceDate: "Apr 11, 2023",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Rerelease Online Exclusive",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 19,
+    name: "POP UP PARADE Watson Amelia",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h78/h5e/9514074210334.jpg",
+    details: `POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+© 2016 COVER Corp.
+Good Smile Company - POP UP PARADE Watson Amelia
+https://www.goodsmile.info/en/product/14688/
+`,
+    highlight: "A New Addition to the POP UP PARADE!",
+    orderPeriod:
+      "Preorders can be placed from 28th July 2023 (Fri) from 12:00pm JST until 24th August 2023 (Thu) at 12:00pm JST.",
+    price: 5500,
+    releaseDate: "Dec 2023",
+    announceDate: "Jul 28, 2023",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale complete product with stand included. Approximately 165mm in height.",
+    available: true,
+  },
+  {
+    id: 20,
+    name: "POP UP PARADE Takanashi Kiara",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h2e/hb7/9494696656926.jpg",
+    details: `POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+© 2016 COVER Corp.
+Good Smile Company - POP UP PARADE Watson Amelia
+https://www.goodsmile.info/en/product/14688/
+`,
+    highlight: "A New Addition to the POP UP PARADE!",
+    orderPeriod:
+      "Preorders can be placed from 6th June 2023 (Tue) from 12:00pm JST until 6th July 2023 (Thu) at 12:00pm JST.",
+    price: 5500,
+    releaseDate: "Dec 2023",
+    announceDate: "Jul 28, 2023",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale complete product with stand included. Approximately 170mm in height.",
+    available: true,
+  },
+  {
+    id: 21,
+    name: "POP UP PARADE Mori Calliope",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hd4/hd0/9465054068766.jpg",
+    details: `POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+© 2016 COVER Corp.
+Good Smile Company - POP UP PARADE Watson Amelia
+https://www.goodsmile.info/en/product/14688/
+`,
+    highlight: "A New Addition to the POP UP PARADE!",
+    orderPeriod:
+      "Preorders can be placed from 24th February 2023 (Fri) from 12:00pm JST until 23rd March 2023 (Thu) at 12:00pm JST.",
+    price: 5500,
+    releaseDate: "Jun 2023",
+    announceDate: "Feb 24, 2023",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale complete product with stand included. Approximately 170mm in height.",
+    available: true,
+  },
+  {
+    id: 22,
+    name: "POP UP PARADE Gawr Gura",
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h0e/hfe/9449653698590.jpg",
+    details: `POP UP PARADE is a series of figures that are easy to collect with affordable prices and speedy releases! Each figure typically stands around 17-18cm in height and the series features a vast selection of characters from popular anime and game series, with many more to be added soon!
+© 2016 COVER Corp.
+Good Smile Company - POP UP PARADE Watson Amelia
+https://www.goodsmile.info/en/product/14688/
+`,
+    highlight: "A New Addition to the POP UP PARADE!",
+    orderPeriod:
+      "Preorders can be placed from 24th February 2023 (Fri) from 12:00pm JST until 23rd March 2023 (Thu) at 12:00pm JST.",
+    price: 5500,
+    releaseDate: "Jun 2023",
+    announceDate: "Jan 12, 2023",
+    manufacturer: "Good Smile Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale complete product with stand included. Approximately 150mm in height.",
     available: true,
   },
 ];
