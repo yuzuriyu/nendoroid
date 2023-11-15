@@ -87,7 +87,7 @@ const Products = () => {
                 className={`mx-1 px-3 py-1 rounded-full ${
                   i + 1 === currentPage
                     ? "bg-orange-400 text-white"
-                    : "text-black"
+                    : "text-black dark:text-white"
                 }`}
               >
                 {i + 1}
@@ -105,7 +105,7 @@ const Products = () => {
           )}
         </div>
         <div className="flex items-center">
-          <p className="mr-2 hidden md:block">Sort by:</p>
+          <p className="mr-2 hidden md:block dark:text-white">Sort by:</p>
           <select
             value={selectedFilter}
             onChange={handleFilterChange}
@@ -124,12 +124,15 @@ const Products = () => {
 
       <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
         {currentProducts.map((product) => (
-          <div key={product.id} className="bg-white shadow-lg p-3">
+          <div
+            key={product.id}
+            className="bg-white shadow-lg p-3 dark:bg-custom2"
+          >
             <div>
               <img src={product.image} alt="product" />
             </div>
-            <div>
-              <h1>{product.name}</h1>
+            <div className="pt-2">
+              <h1 className="dark:text-white">{product.name}</h1>
             </div>
             <div className="mt-5 mb-2">
               <div className="flex flex-col md:flex-row gap-2 mb-2">
@@ -199,7 +202,7 @@ const Products = () => {
               className={`mx-1 px-3 py-1 rounded-full ${
                 i + 1 === currentPage
                   ? "bg-orange-400 text-white"
-                  : "text-black"
+                  : "text-black dark:text-white"
               }`}
             >
               {i + 1}

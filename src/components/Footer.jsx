@@ -17,8 +17,8 @@ const Footer = () => {
             <p className="text-white mb-4">
               This website is an independent project and is not affiliated with
               or endorsed by Good Smile Company or any associated ecommerce
-              brand. The content provided on this website is for informational
-              purposes only.
+              brand. The content provided on this website is for skill
+              showcasing purposes only.
             </p>
             <p className="text-white">
               All product names, logos, and brands are the property of their

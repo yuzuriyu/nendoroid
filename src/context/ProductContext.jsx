@@ -1,23 +1,23 @@
+/** @format */
+
 import { createContext, useState, useEffect, Children } from "react";
 import { productData } from "../productData";
 
-const ProductContext = createContext()
+const ProductContext = createContext();
 
 const ProductContextProvider = ({ children }) => {
-    const [allProducts, setAllProducts] = useState(productData)
-    console.log(allProducts)
+  const [allProducts, setAllProducts] = useState(productData);
+  console.log(allProducts);
 
-    const value = {
-        allProducts
-    }
-    
-    return (
-        <ProductContext.Provider value={value}>
-            {children}
-        </ProductContext.Provider>
-    )
-}
+  const value = {
+    allProducts,
+  };
 
-export default ProductContextProvider
+  return (
+    <ProductContext.Provider value={value}>{children}</ProductContext.Provider>
+  );
+};
 
-export { ProductContext, ProductContextProvider }
+export default ProductContextProvider;
+
+export { ProductContext, ProductContextProvider };
