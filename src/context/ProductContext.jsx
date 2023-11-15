@@ -1,6 +1,6 @@
 /** @format */
 
-import { createContext, useState, useEffect, Children } from "react";
+import { createContext, useState } from "react";
 import { productData } from "../productData";
 
 const ProductContext = createContext();

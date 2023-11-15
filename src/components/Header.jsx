@@ -1,6 +1,6 @@
 /** @format */
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import menu from "../assets/menu.png";
 import ToggleMenu from "./ToggleMenu";
 
@@ -39,7 +39,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="items-center gap-5 hidden md:flex">
-          <p className="text-white text-sm">LOG IN</p>
+          <p className="text-white text-sm hover:text-orange-400 cursor-pointer">
+            LOG IN
+          </p>
           <button className="bg-orange-400 px-5 py-3 text-white text-sm hover:bg-orange-500">
             GET STARTED
           </button>

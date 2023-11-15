@@ -1,13 +1,16 @@
 /** @format */
 
-import React, { useState, useEffect } from "react";
-import search from "../assets/search.png";
+import React, { useState, useEffect, useContext } from "react";
 import { carouselData } from "../carouselData";
 import wallpaper from "../assets/wallpaper.jpg";
+import themeIcon from "../assets/theme.png";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = carouselData.map((data) => data.image);
+
+  const { changeTheme, theme } = useContext(ThemeContext);
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -37,6 +40,17 @@ const Hero = () => {
           alt="wallpaper"
           className="h-full object-cover w-full absolute -z-10 dark:z-10"
         />
+        <div className="w-10/12 md:flex justify-end absolute bottom-24 left-1/2 -translate-x-1/2 z-40 hidden">
+          <img
+            src={themeIcon}
+            alt=""
+            className={`rounded-full w-16 cursor-pointer ${
+              theme === "dark" ? "bg-orange-400" : "bg-custom2"
+            }`}
+            onClick={() => changeTheme()}
+          />
+        </div>
+
         <div className="w-11/12 md:w-10/12 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-8 z-30">
           <div className="w-full md:w-1/2">
             <h1 className="text-3xl text-white md:text-4xl font-playfair">
@@ -66,19 +80,6 @@ const Hero = () => {
               </button>
             </div>
           </div> */}
-        </div>
-      </div>
-
-      <div className="mt-20 w-11/12 m-auto md:w-10/12">
-        <div className="flex mb-5 w-2/3 md:w-1/3 rounded-lg overflow-hidden">
-          <input
-            type="text"
-            className="flex-1 border-2 placeholder:pl-2 rounded-lg rounded-r-none focus:outline-none pl-2"
-            placeholder="Search"
-          />
-          <div className="bg-orange-400 px-2 py-2">
-            <img src={search} alt="search" className="w-5" />
-          </div>
         </div>
       </div>
     </>
