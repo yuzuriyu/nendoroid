@@ -1,22 +1,21 @@
 /** @format */
 
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Homepage from "./pages/HomePage";
 import ProductContextProvider from "./context/ProductContext";
-import Products from "./components/Products";
-import Footer from "./components/Footer";
 import ThemeContextProvider from "./context/ThemeContext";
+import { Route, Routes } from "react-router-dom";
+import SelectedProductPage from "./pages/SelectedProductPage";
 
 const App = () => {
   return (
     <ProductContextProvider>
       <ThemeContextProvider>
         <div className="font-poppins dark:bg-custom1">
-          <Header />
-          <Hero />
-          <Products />
-          <Footer />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/product/:id" element={<SelectedProductPage />} />
+          </Routes>
         </div>
       </ThemeContextProvider>
     </ProductContextProvider>

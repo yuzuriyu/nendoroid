@@ -3,6 +3,7 @@
 import { useState } from "react";
 import menu from "../assets/menu.png";
 import ToggleMenu from "./ToggleMenu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false);
@@ -14,10 +15,13 @@ const Header = () => {
   return (
     <>
       <div className="w-11/12 flex justify-between items-center md:w-10/12 absolute top-5 left-1/2 -translate-x-1/2 z-20">
-        <img
-          src="https://goodsmileshop.com/medias/sys_master/images/images/h15/h37/8880698064926.png"
-          alt="logo"
-        />
+        <Link to={"/"}>
+          <img
+            src="https://goodsmileshop.com/medias/sys_master/images/images/h15/h37/8880698064926.png"
+            alt="logo"
+          />
+        </Link>
+
         <div className="lg:w-[350px] hidden md:block md:w-[220px]">
           <ul className="flex justify-around items-center">
             <li className="text-white relative cursor-pointer group">

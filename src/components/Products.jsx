@@ -5,11 +5,20 @@ import { ProductContext } from "../context/ProductContext";
 import arrowLeft from "../assets/arrow-left.png";
 import arrowRight from "../assets/arrow-right.png";
 import search from "../assets/search.png";
+import SelectedProduct from "./SelectedProduct";
+import { Link } from "react-router-dom";
 
 const Products = () => {
-  const { allProducts } = useContext(ProductContext);
+  const { allProducts, selectedProductData, setSelectedProductData } =
+    useContext(ProductContext);
   const productsPerPage = 16;
   const [searchInput, setSearchInput] = useState("");
+
+  const handleSelectProduct = (product) => {
+    setSelectedProductData(product);
+  };
+
+  console.log(selectedProductData);
 
   // State to manage the current page
   const [currentPage, setCurrentPage] = useState(1);
@@ -147,9 +156,11 @@ const Products = () => {
 
         <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
           {currentProducts.map((product) => (
-            <div
+            <Link
+              to={`/product/${product.id}`}
               key={product.id}
               className="bg-white shadow-lg p-3 dark:bg-custom2"
+              onClick={() => handleSelectProduct(product)}
             >
               <div>
                 <img src={product.image} alt="product" />
@@ -204,7 +215,7 @@ const Products = () => {
               <div className="flex justify-end">
                 <p className="text-gray-400">¥{product.price}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="flex mt-4 items-center">

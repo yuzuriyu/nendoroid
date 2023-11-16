@@ -7,10 +7,12 @@ const ProductContext = createContext();
 
 const ProductContextProvider = ({ children }) => {
   const [allProducts, setAllProducts] = useState(productData);
-  console.log(allProducts);
+  const [selectedProductData, setSelectedProductData] = useState(null);
 
   const value = {
     allProducts,
+    selectedProductData,
+    setSelectedProductData,
   };
 
   return (
