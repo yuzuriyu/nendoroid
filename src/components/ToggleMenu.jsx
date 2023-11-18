@@ -4,6 +4,7 @@ import { useContext } from "react";
 import close from "../assets/close.png";
 import theme from "../assets/theme.png";
 import { ThemeContext } from "../context/ThemeContext";
+import { Link } from 'react-router-dom';
 
 const ToggleMenu = (props) => {
   const { setTheme, changeTheme } = useContext(ThemeContext);
@@ -23,11 +24,11 @@ const ToggleMenu = (props) => {
           onClick={() => props.handleToggleMenu()}
         />
       </div>
-      <ul className="text-center">
-        <li className="text-white py-3">Home</li>
-        <li className="text-white py-3">About</li>
-        <li className="text-white py-3">Contact</li>
-        <li className="text-white py-3">Cart</li>
+      <ul className="flex flex-col">
+        <Link to={"/"} className="text-white py-3 text-center">Home</Link>
+        <Link to={"/about"} className="text-white py-3 text-center">About</Link>
+        <Link to={"/contact"} className="text-white py-3 text-center">Contact</Link>
+        <Link to={"/cart"} className="text-white py-3 text-center">Cart</Link>
       </ul>
     </div>
   );

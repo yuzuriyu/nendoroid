@@ -24,22 +24,22 @@ const Header = () => {
 
         <div className="lg:w-[350px] hidden md:block md:w-[220px]">
           <ul className="flex justify-around items-center">
-            <li className="text-white relative cursor-pointer group">
+            <Link to={"/"} className="text-white relative cursor-pointer group">
               Home
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </li>
-            <li className="text-white relative cursor-pointer group">
+            </Link>
+            <Link to={"/about"} className="text-white relative cursor-pointer group">
               About
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </li>
-            <li className="text-white relative cursor-pointer group">
+            </Link>
+            <Link to={"/contact"} className="text-white relative cursor-pointer group">
               Contact
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </li>
-            <li className="text-white relative cursor-pointer group">
+            </Link>
+            <Link to={"/cart"} className="text-white relative cursor-pointer group">
               Cart
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="items-center gap-5 hidden md:flex">

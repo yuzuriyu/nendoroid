@@ -5,7 +5,6 @@ import { ProductContext } from "../context/ProductContext";
 import arrowLeft from "../assets/arrow-left.png";
 import arrowRight from "../assets/arrow-right.png";
 import search from "../assets/search.png";
-import SelectedProduct from "./SelectedProduct";
 import { Link } from "react-router-dom";
 
 const Products = () => {
@@ -166,7 +165,7 @@ const Products = () => {
                 <img src={product.image} alt="product" />
               </div>
               <div className="pt-2">
-                <h1 className="dark:text-white">{product.name}</h1>
+                <h1 className="dark:text-white text-sm">{product.name}</h1>
               </div>
               <div className="mt-5 mb-2">
                 <div className="flex flex-col md:flex-row gap-2 mb-2">
@@ -213,7 +212,7 @@ const Products = () => {
                 </div>
               </div>
               <div className="flex justify-end">
-                <p className="text-gray-400">¥{product.price}</p>
+                <p className="text-gray-500 dark:text-white">¥{product.price}</p>
               </div>
             </Link>
           ))}
