@@ -11,7 +11,25 @@ const ProductContextProvider = ({ children }) => {
 
   const [cart, setCart] = useState([])
 
-  console.log(cart)
+  const [quantities, setQuantities] = useState({});
+  const [total, setTotal] = useState(0)
+
+
+  
+  const add = (itemId) => {
+    setQuantities((prevQuantities) => ({
+        ...prevQuantities,
+        [itemId]: (prevQuantities[itemId] || 0) + 1,
+    }));
+};
+
+const subtract = (itemId) => {
+    setQuantities((prevQuantities) => ({
+        ...prevQuantities,
+        [itemId]: prevQuantities[itemId] > 0 ? prevQuantities[itemId] - 1 : 0,
+    }));
+};
+  
 
   const addToCart = (product) => {
     const isProductInCart = cart.some((item) => item.id === product.id);
@@ -35,7 +53,11 @@ const ProductContextProvider = ({ children }) => {
     setSelectedProductData,
     cart,
     addToCart,
-    removeToCart
+    removeToCart,
+    quantities,
+    total,
+    add,
+    subtract,
   };
 
   return (

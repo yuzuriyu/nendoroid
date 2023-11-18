@@ -10,7 +10,7 @@ import { Link, useParams } from 'react-router-dom';
 
 
 const SelectedProduct = () => {
-  const { selectedProductData, allProducts, addToCart, setSelectedProductData } = useContext(ProductContext);
+  const { selectedProductData, allProducts, addToCart, setSelectedProductData, quantities, add, subtract } = useContext(ProductContext);
   const [similarProducts, setSimilarProducts] = useState([])
   const [activeButton, setActiveButton] = useState("description");
   const [loading, setLoading] = useState(true);
@@ -63,13 +63,13 @@ const SelectedProduct = () => {
   }
 
   return (
-    <div className="w-11/12 m-auto my-24 md:w-10/12">
-      <div className="flex flex-col md:flex-row">
+    <div className="w-11/12 m-auto pt-24 md:pb-24 md:w-10/12">
+      <div className="flex flex-col md:flex-row pt-10">
         <div className="w-full flex justify-center py-10 md:w-1/2">
           <img
             src={selectedProductData.image}
             alt="product"
-            className="w-[250px]"
+            className="w-[250px] dark:bg-custom2 p-2"
           />
         </div>
         <div className="my-2 md:w-1/2">
@@ -81,9 +81,9 @@ const SelectedProduct = () => {
               ¥{selectedProductData.price}
             </h1>
             <div className="flex items-center">
-              <img src={minus} alt="minus" className="cursor-pointer hover:scale-110 transition-transform ease-in-out"/>
-              <p className="mx-2.5 text-xs dark:text-white">1</p>
-              <img src={plus} alt="plus" className="cursor-pointer hover:scale-110 transition-transform ease-in-out"/>
+              <img src={minus} alt="minus" className="cursor-pointer hover:scale-110 transition-transform ease-in-out" onClick={() => subtract(selectedProductData.id)}/>
+              <p className="mx-2.5 text-xs dark:text-white">{quantities[selectedProductData.id] || 0}</p>
+              <img src={plus} alt="plus" className="cursor-pointer hover:scale-110 transition-transform ease-in-out" onClick={() => add(selectedProductData.id)}/>
             </div>
           </di>
           <div className="flex justify-between mt-4">
@@ -166,7 +166,7 @@ const SelectedProduct = () => {
           <div className="hidden md:block">
             <div className="flex items-center w-full">
               <img src={wishlist} alt="wishlist" className="mr-4"/>
-              <button className="bg-black text-white lg:w-2/3 md:flex-1 lg:flex-none py-2 rounded-md hover:opacity-80" onClick={() => addToCart(selectedProductData)}>Add to Cart</button>
+              <button className="bg-black dark:bg-orange-400 text-white lg:w-2/3 md:flex-1 lg:flex-none py-2 rounded-md hover:opacity-80" onClick={() => addToCart(selectedProductData)}>Add to Cart</button>
             </div>
         </div>
         </div>
@@ -188,7 +188,7 @@ const SelectedProduct = () => {
         <div className="flex items-center py-5 border-t-2 md:hidden">
           <div className="flex items-center w-full justify-center">
             <img src={wishlist} alt="wishlist" className="mr-4"/>
-            <button className="bg-black text-white flex-1 py-2 rounded-md md:w-1/2 md:flex-none hover:opacity-80" onClick={() => addToCart(selectedProductData)}>Add to Cart</button>
+            <button className="bg-black text-white flex-1 py-2 rounded-md md:w-1/2 md:flex-none hover:opacity-80 dark:bg-orange-400" onClick={() => addToCart(selectedProductData)}>Add to Cart</button>
           </div>
         </div>
     </div>

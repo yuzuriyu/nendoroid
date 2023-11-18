@@ -1,15 +1,13 @@
 /** @format */
 
-import Header from "../components/Header";
+import HeaderV2 from "../components/HeaderV2";
 import SelectedProduct from "../components/SelectedProduct";
-import Footer from "../components/Footer";
 
 const SelectedProductPage = () => {
   return (
     <div>
-      <Header />
+      <HeaderV2 />
       <SelectedProduct />
-      <Footer />
     </div>
   );
 };
