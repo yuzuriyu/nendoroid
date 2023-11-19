@@ -2,7 +2,7 @@
 
 import { useContext, useEffect, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
-import wishlist from '../assets/wishlist.png';
+import wishlist from '../assets/Wishlist.png';
 import heart from '../assets/heart.png';
 import plus from '../assets/plus.png';
 import minus from '../assets/minus.png';
