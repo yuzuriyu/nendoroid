@@ -1,12 +1,12 @@
 /** @format */
 
-import HeaderV2 from "../components/HeaderV2";
+import Header from "../components/Header";
 import SelectedProduct from "../components/SelectedProduct";
 
 const SelectedProductPage = () => {
   return (
     <div>
-      <HeaderV2 />
+      <Header />
       <SelectedProduct />
     </div>
   );

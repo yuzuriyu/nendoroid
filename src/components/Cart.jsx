@@ -5,7 +5,7 @@ import minus from '../assets/minus.png';
 import cancel from '../assets/cancel.png';
 import heart from '../assets/heart.png';
 import { Link } from 'react-router-dom';
-import gura from '../assets/gura.jpg';
+
 
 const Cart = () => {
     const { cart, allProducts, removeToCart, quantities, add, subtract } = useContext(ProductContext)
@@ -55,7 +55,7 @@ const Cart = () => {
         getRandomProducts();
     }, [allProducts]);
     return (
-        <div className="pt-32 md:pb-32 w-11/12 m-auto md:w-10/12">
+        <div className="pt-32 pb-12 md:pb-32 w-11/12 m-auto md:w-10/12">
             {cart.length !== 0 && <h1 className="text-2xl mb-4 font-bold dark:text-white">My Shopping Bag</h1>}
             <div className="w-full md:w-1/2">
                 {cart.map((item => <div className="flex border-b-2 py-2 items-center">
@@ -78,10 +78,7 @@ const Cart = () => {
                         </div>
                     </div>
                 </div>))}
-                {cart.length === 0 && <div className="m-auto flex items-center">
-                    <div className="mr-4">
-                        <img src={gura} alt="gawr gura" className="w-48 m-auto dark:bg-custom2 p-2"/>
-                    </div>
+                {cart.length === 0 && <div className="m-auto flex items-center mt-7">
                     <div>
                         <p className="mb-6 dark:text-white">Your shopping cart is currently empty.</p>
                         <Link to={"/"} className="bg-orange-400 text-white py-3 px-5">Find something!</Link>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import menu from "../assets/menu.png";
 import ToggleMenu from "./ToggleMenu";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [isToggleMenuOpen, setIsToggleMenuOpen] = useState(false);
@@ -16,37 +17,25 @@ const Header = () => {
     <>
       <div className="w-11/12 flex justify-between items-center md:w-10/12 absolute top-5 left-1/2 -translate-x-1/2 z-20">
         <Link to={"/"}>
-          <img
-            src="https://goodsmileshop.com/medias/sys_master/images/images/h15/h37/8880698064926.png"
-            alt="logo"
-          />
+          <img src={logo} alt="logo" className="w-[75px]"/>
         </Link>
-
-        <div className="lg:w-[350px] hidden md:block md:w-[220px]">
+        <div className="md:w-[150px] hidden md:block">
           <ul className="flex justify-around items-center">
-            <Link to={"/"} className="text-white relative cursor-pointer group">
+            <Link to={"/"} className=" relative cursor-pointer group">
               Home
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
             </Link>
-            <Link to={"/about"} className="text-white relative cursor-pointer group">
-              About
-              <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </Link>
-            <Link to={"/contact"} className="text-white relative cursor-pointer group">
-              Contact
-              <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
-            </Link>
-            <Link to={"/cart"} className="text-white relative cursor-pointer group">
+            <Link to={"/cart"} className=" relative cursor-pointer group">
               Cart
               <div className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-orange-400 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300"></div>
             </Link>
           </ul>
         </div>
         <div className="items-center gap-5 hidden md:flex">
-          <p className="text-white text-sm hover:text-orange-400 cursor-pointer">
+          <Link to={"/login"} className=" text-sm hover:text-orange-400 cursor-pointer">
             LOG IN
-          </p>
-          <button className="bg-orange-400 px-5 py-3 text-white text-sm hover:bg-orange-500">
+          </Link>
+          <button className="bg-orange-400 px-5 py-3 text-white text-sm hover:bg-orange-500 rounded-lg">
             GET STARTED
           </button>
         </div>
@@ -65,13 +54,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// <div className="flex">
-//   <img src={signIn} alt="sign in" className="w-6 mr-5 md:mr-7" />
-//   <img src={cart} alt="cart" className="w-6 mr-5 md:mr-7" />
-//   <img
-//     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAPElEQVR4nO3WsQkAMAwDQe2/dALuXIVUBnMHGkDdJwBAOUuWNUcAAOBpulplfGQ8AAC/pvNbxkfGA0CaC2n/KuSsP4fKAAAAAElFTkSuQmCC"
-//     alt="menu"
-//     className="w-5"
-//   />
-// </div>;

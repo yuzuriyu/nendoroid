@@ -63,8 +63,8 @@ const SelectedProduct = () => {
   }
 
   return (
-    <div className="w-11/12 m-auto pt-24 md:pb-24 md:w-10/12">
-      <div className="flex flex-col md:flex-row pt-10">
+    <div className="w-11/12 m-auto pt-12 md:pt-32 md:pb-24 md:w-10/12">
+      <div className="flex flex-col md:flex-row pt-10 items-center">
         <div className="w-full flex justify-center py-10 md:w-1/2">
           <img
             src={selectedProductData.image}

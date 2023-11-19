@@ -25,9 +25,8 @@ const ToggleMenu = (props) => {
         />
       </div>
       <ul className="flex flex-col">
+        <Link to={"/login"} className="text-white py-3 text-center">Login</Link>
         <Link to={"/"} className="text-white py-3 text-center">Home</Link>
-        <Link to={"/about"} className="text-white py-3 text-center">About</Link>
-        <Link to={"/contact"} className="text-white py-3 text-center">Contact</Link>
         <Link to={"/cart"} className="text-white py-3 text-center">Cart</Link>
       </ul>
     </div>
