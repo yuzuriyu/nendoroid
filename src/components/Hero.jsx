@@ -75,7 +75,7 @@ const Hero = () => {
               Exquisite Miniature Marvels: Elevate Your Collection with the
               Pinnacle of Nendoroid Craftsmanship.
             </h1>
-            <p className=" pt-8 pb-10 ">
+            <p className=" pt-4 pb-7 ">
               Where Artistry Meets Play: Discover the Epitome of Nendoroid
               Excellence, Each Figurine a Symphony of Precision and Charm.
             </p>
