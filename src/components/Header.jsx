@@ -72,33 +72,22 @@ const Header = () => {
           )}
         </Link>
         <div className="flex items-center">
-          <div className="mr-4">
-            {theme === "dark" ? (
-              <img
-                src={menuLight}
-                alt="menu"
-                className="w-9 cursor-pointer"
-                onClick={() => handleToggleMenu()}
-              />
-            ) : (
-              <img
-                src={menuDark}
-                alt="menu"
-                className="w-9 cursor-pointer"
-                onClick={() => handleToggleMenu()}
-              />
-            )}
-          </div>
           <div className="flex items-center w-11/12 justify-between m-auto">
             <div className="flex items-center">
               {userPhotoURL ? (
                 <img
                   src={userPhotoURL}
                   alt="theme"
-                  className="w-10 rounded-full"
+                  className="w-10 rounded-full cursor-pointer"
+                  onClick={() => handleToggleMenu()}
                 />
               ) : (
-                <img src={userTemp} alt="theme" className="w-7 rounded-full" />
+                <img
+                  src={userTemp}
+                  alt="theme"
+                  className="w-7 rounded-full cursor-pointer"
+                  onClick={() => handleToggleMenu()}
+                />
               )}
               {userDisplayName ? (
                 <p className="text-black hidden">
