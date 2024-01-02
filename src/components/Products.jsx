@@ -212,7 +212,9 @@ const Products = () => {
                 </div>
               </div>
               <div className="flex justify-end">
-                <p className="text-gray-500 dark:text-white">¥{product.price}</p>
+                <p className="text-gray-500 dark:text-white">
+                  ¥{product.price}
+                </p>
               </div>
             </Link>
           ))}

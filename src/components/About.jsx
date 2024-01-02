@@ -2,10 +2,10 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="w-11/12 m-auto py-10 md:w-10/12">
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="w-11/12 m-auto py-20 md:w-10/12">
+      <div className="grid grid-cols-1 gap-20 md:grid-cols-2 lg:grid-cols-3">
         <div>
-          <h1 className="text-lg font-bold mb-4 dark:text-white">
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
             Welcome to NendoNest
           </h1>
           <p className="dark:text-white">
@@ -17,7 +17,7 @@ export default function About() {
           </p>
         </div>
         <div>
-          <h1 className="text-lg font-bold mb-4 dark:text-white">
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
             Discover the Symphony of Precision and Charm
           </h1>
           <p className="dark:text-white">
@@ -30,7 +30,7 @@ export default function About() {
           </p>
         </div>
         <div>
-          <h1 className="text-lg font-bold mb-4 dark:text-white">
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
             Elevate Your Collection
           </h1>
           <p className="dark:text-white">
@@ -43,7 +43,9 @@ export default function About() {
           </p>
         </div>
         <div>
-          <h1 className="text-lg font-bold mb-4 dark:text-white">Our Vision</h1>
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
+            Our Vision
+          </h1>
           <p className="dark:text-white">
             At NendoNest, our vision is to be the go-to destination for
             Nendoroid enthusiasts, offering a seamless blend of artistry and
@@ -53,7 +55,7 @@ export default function About() {
           </p>
         </div>
         <div>
-          <h1 className="text-lg font-bold mb-4 dark:text-white">
+          <h1 className="text-2xl font-bold mb-4 dark:text-white">
             Join Us on this Journey
           </h1>
           <p className="dark:text-white">

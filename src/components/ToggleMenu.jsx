@@ -30,7 +30,7 @@ const ToggleMenu = (props) => {
   };
 
   return (
-    <div className="w-11/12 absolute top-0 right-0 bg-orange-400 h-screen z-50 dark:bg-custom1 rounded-l-lg md:w-1/2 lg:w-1/4">
+    <div className="w-11/12 absolute top-0 right-0 bg-orange-400 h-screen z-50 rounded-l-lg md:w-1/2 lg:w-1/4">
       <div className="flex items-center justify-between w-11/12 m-auto pt-5 mb-4">
         <img src={logo} alt="" className="w-36" />
         <img

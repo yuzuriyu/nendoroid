@@ -91,7 +91,7 @@ const SelectedProduct = () => {
             <h1 className="text-orange-400 text-lg">
               ¥{selectedProductData.price}
             </h1>
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <img
                 src={minus}
                 alt="minus"
@@ -107,7 +107,7 @@ const SelectedProduct = () => {
                 className="cursor-pointer hover:scale-110 transition-transform ease-in-out"
                 onClick={() => add(selectedProductData.id)}
               />
-            </div>
+            </div> */}
           </di>
           <div className="flex justify-between mt-4">
             <p
