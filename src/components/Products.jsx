@@ -99,7 +99,7 @@ const Products = () => {
         </div>
       </div>
       <div className="w-11/12 m-auto md:w-10/12 my-20">
-        <div className="flex w-full items-center justify-between mb-2">
+        <div className="flex w-full items-center justify-between mb-4">
           <div className="flex items-center">
             {currentPage > 1 && (
               <img
