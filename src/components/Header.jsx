@@ -1,16 +1,14 @@
 /** @format */
 
 import { useState, useEffect } from "react";
-import menuLight from "../assets/menu--light.png";
 import ToggleMenu from "./ToggleMenu";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 import logoDark from "../assets/logo--dark.png";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import menuDark from "../assets/menu--dark.png";
 import userTemp from "../assets/userTemp--dark.png";
-
+import userTempLight from "../assets/tempUser--light.png";
 import { auth } from "../config/firebase";
 
 const Header = () => {
@@ -83,7 +81,7 @@ const Header = () => {
                 />
               ) : (
                 <img
-                  src={userTemp}
+                  src={theme === "light" ? userTemp : userTempLight}
                   alt="theme"
                   className="w-7 rounded-full cursor-pointer"
                   onClick={() => handleToggleMenu()}

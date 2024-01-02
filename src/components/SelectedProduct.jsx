@@ -99,7 +99,7 @@ const SelectedProduct = () => {
                 onClick={() => subtract(selectedProductData.id)}
               />
               <p className="mx-2.5 text-xs dark:text-white">
-                {quantities[selectedProductData.id] || 0}
+                {quantities[selectedProductData.id] || 1}
               </p>
               <img
                 src={plus}
