@@ -1,81 +1,20 @@
 /** @format */
 
 import React, { useState, useEffect, useContext } from "react";
-import themeIcon from "../assets/theme.png";
-import { ThemeContext } from "../context/ThemeContext";
 import { Link } from "react-router-dom";
-import umaru1 from "../assets/umaru-1.jpg";
-import umaru3 from "../assets/umaru-3.jpg";
-import umaru4 from "../assets/umaru-4.jpg";
 import { auth } from "../config/firebase";
 
 const Hero = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [umaru1, umaru3, umaru4];
-
-  const { changeTheme, theme } = useContext(ThemeContext);
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
-  // Automatically slide to the next image every 3000 milliseconds (3 seconds)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextImage();
-    }, 7000);
-
-    // Cleanup on component unmount
-    return () => clearInterval(interval);
-  }, [currentIndex, images.length]);
-
   return (
     <>
-      <div className="h-[83vh] w-full relative">
-        <div className=" overflow-hidden w-full relative h-full">
-          <img
-            src={images[currentIndex]}
-            alt={`image ${currentIndex + 1}`}
-            className="w-full h-full object-cover -z-10"
-          />
-          <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between">
-            <button
-              onClick={prevImage}
-              className="bg-white py-8 px-3 hidden md:block rounded-r-lg"
-            >
-              &#8249;
-            </button>
-            <button
-              onClick={nextImage}
-              className="bg-white py-8 px-3 hidden md:block rounded-l-lg"
-            >
-              &#8250;
-            </button>
-          </div>
-          <div className="w-10/12 md:flex justify-end absolute bottom-24 left-1/2 -translate-x-1/2 z-40 hidden">
-            <img
-              src={themeIcon}
-              alt=""
-              className={`rounded-full w-16 cursor-pointer ${
-                theme === "dark" ? "bg-orange-400" : "bg-custom2"
-              }`}
-              onClick={() => changeTheme()}
-            />
-          </div>
-        </div>
-        <div className="w-11/12 md:w-10/12 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col md:flex-row gap-8 z-30">
-          <div className="w-full md:w-1/2">
-            <h1 className="text-2xl lg:text-3xl font-playfair">
+      <div className="w-11/12 m-auto relative md:flex md:w-10/12 lg:flex md:gap-20 lg:gap-52 py-16">
+        <div className="flex flex-col md:flex-row gap-20 z-30 md:w-1/2">
+          <div className="w-full">
+            <h1 className="text-4xl font-playfair">
               Exquisite Miniature Marvels: Elevate Your Collection with the
               Pinnacle of Nendoroid Craftsmanship.
             </h1>
-            <p className=" pt-8 pb-10 ">
+            <p className=" pt-8 pb-10 text-lg">
               Where Artistry Meets Play: Discover the Epitome of Nendoroid
               Excellence, Each Figurine a Symphony of Precision and Charm.
             </p>
@@ -87,12 +26,59 @@ const Hero = () => {
               </Link>
               {!auth.currentUser && (
                 <Link to={"/login"} className="flex items-center group">
-                  <p className="underline mr-2">LOGIN</p>
+                  <p className="mr-2">Login</p>
                   <p className=" text-2xl group-hover:translate-x-4 ease-in-out transition">
                     →
                   </p>
                 </Link>
               )}
+            </div>
+            <div className="w-full m-auto border-2 rounded-lg border-black py-8 px-8 flex mt-10">
+              <div>
+                <h1 className="text-3xl mr-7">50k</h1>
+              </div>
+              <div>
+                <p>
+                  We are proud to announce that we now employ a workforce of
+                  over <span className="font-bold">50, 000</span>. It is all
+                  possible thanks to you.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full grid grid-cols-2 gap-5 h-[550px] md:w-1/2 mt-10 md:mt-0">
+          <div className="row-start-1 row-end-3 rounded-lg overflow-hidden relative group">
+            <img
+              src="https://mfiles.alphacoders.com/964/964607.png"
+              alt=""
+              className="h-full w-full object-cover absolute -z-10 group-hover:scale-110 transition-transform duration-300 ease-in-out"
+            />
+            <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 transition-transform duration-300 ease-in-out">
+              <h1 className="font-bold">Exclusive</h1>
+              <p className="text-xs text-gray-500">Elite Access</p>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden relative group">
+            <img
+              src="https://img.goodfon.com/wallpaper/nbig/4/70/fubuki-shirakami-virtualnyi-iutuber-hololive-holo-no-graffit.jpg"
+              alt=""
+              className="h-full w-full object-cover absolute -z-10 group-hover:scale-110 transition-transform duration-300 ease-in-out"
+            />
+            <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 transition-transform duration-300 ease-in-out">
+              <h1 className="font-bold mb-1">Limited</h1>
+              <p className="text-xs text-gray-500">Restricted Edition</p>
+            </div>
+          </div>
+          <div className="rounded-lg overflow-hidden relative group">
+            <img
+              src="https://e0.pxfuel.com/wallpapers/315/680/desktop-wallpaper-tokoyami-towa.jpg"
+              alt=""
+              className="h-full w-full object-cover absolute -z-10 group-hover:scale-125 transition-transform duration-300 ease-in-out"
+            />
+            <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 duration-300 transition-transform ease-in-out">
+              <h1 className="font-bold mb-1">Bonus</h1>
+              <p className="text-xs text-gray-500">Extra Perk</p>
             </div>
           </div>
         </div>
