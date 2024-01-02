@@ -33,6 +33,10 @@ const ProductContextProvider = ({ children }) => {
 
     if (!isProductInCart) {
       setCart([...cart, { ...product }]);
+      setQuantities((prevQuantities) => ({
+        ...prevQuantities,
+        [product.id]: 1, // Set the initial quantity to 1 for the new item
+      }));
       alert("Item has been added.");
     } else {
       alert("Item already in cart.");
