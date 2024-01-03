@@ -59,6 +59,7 @@ const ProductContextProvider = ({ children }) => {
     total,
     add,
     subtract,
+    setTotal,
   };
 
   return (

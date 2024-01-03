@@ -15,6 +15,7 @@ export default {
       colors: {
         custom1: "#352F44",
         custom2: "#5C5470",
+        gold: "#FFD700",
       },
     },
   },

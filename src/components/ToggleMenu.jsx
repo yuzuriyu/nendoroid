@@ -12,6 +12,7 @@ import cartIcon from "../assets/cartIcon.png";
 import loginIcon from "../assets/login--light.png";
 import { signOut } from "firebase/auth";
 import logo from "../assets/logo--dark.png";
+import blogIcon from "../assets/blog--light.png";
 import aboutIcon from "../assets/about--light.png";
 import contactIcon from "../assets/contact--light.png";
 
@@ -74,6 +75,12 @@ const ToggleMenu = (props) => {
               <img src={cartIcon} alt="cart icon" className="w-7 mr-4" />
             </div>
             <p className="text-white py-3 text-center">Cart</p>
+          </Link>
+          <Link to={"/blog"} className="flex items-center">
+            <div>
+              <img src={blogIcon} alt="cart icon" className="w-7 mr-4" />
+            </div>
+            <p className="text-white py-3 text-center">Blog</p>
           </Link>
           <div
             className="flex items-center cursor-pointer"

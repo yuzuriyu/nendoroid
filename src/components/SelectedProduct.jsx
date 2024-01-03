@@ -75,12 +75,12 @@ const SelectedProduct = () => {
 
   return (
     <div className="w-11/12 m-auto md:py-10 md:w-10/12">
-      <div className="flex flex-col md:flex-row pt-10 items-center">
-        <div className="w-full flex justify-center py-10 md:w-1/2">
+      <div className="flex flex-col md:flex-row pt-10 items-center gap-10">
+        <div className="w-full flex justify-center py-10 md:w-1/2 bg-white rounded-lg">
           <img
             src={selectedProductData.image}
             alt="product"
-            className="w-[250px] dark:bg-custom2 p-2"
+            className="w-[250px]"
           />
         </div>
         <div className="my-2 md:w-1/2">
@@ -91,23 +91,6 @@ const SelectedProduct = () => {
             <h1 className="text-orange-400 text-lg">
               ¥{selectedProductData.price}
             </h1>
-            {/* <div className="flex items-center">
-              <img
-                src={minus}
-                alt="minus"
-                className="cursor-pointer hover:scale-110 transition-transform ease-in-out"
-                onClick={() => subtract(selectedProductData.id)}
-              />
-              <p className="mx-2.5 text-xs dark:text-white">
-                {quantities[selectedProductData.id] || 0}
-              </p>
-              <img
-                src={plus}
-                alt="plus"
-                className="cursor-pointer hover:scale-110 transition-transform ease-in-out"
-                onClick={() => add(selectedProductData.id)}
-              />
-            </div> */}
           </di>
           <div className="flex justify-between mt-4">
             <p
@@ -211,27 +194,33 @@ const SelectedProduct = () => {
           </div>
         </div>
       </div>
-      <div className="w-full m-auto">
+      <div className="w-full m-auto pt-20">
         <h1 className="dark:text-white py-4 font-bold">Similar Products</h1>
         <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 mb-10">
           {similarProducts.map((product) => (
             <Link
               to={`/product/${product.id}`}
               key={product.id}
-              className="shadow-lg p-2 dark:bg-custom2"
+              className="shadow-lg p-2 dark:bg-custom2 rounded-lg"
             >
-              <div className="relative">
-                <img src={product.image} alt="product" />
+              <div className="relative bg-white">
+                <img
+                  src={product.image}
+                  alt="product"
+                  className="w-[200px] m-auto"
+                />
                 <img
                   src={heart}
                   alt="heart"
                   className="absolute top-2 right-2 w-7 cursor-pointer hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
-              <p className="text-gray-500 text-sm pb-3 dark:text-white pt-2">
-                {product.name}
-              </p>
-              <h1 className="dark:text-white">¥{product.price}</h1>
+              <div className="w-11/12 m-auto">
+                <p className="text-gray-500 text-sm pb-3 dark:text-white pt-2">
+                  {product.name}
+                </p>
+                <h1 className="dark:text-white text-right">¥{product.price}</h1>
+              </div>
             </Link>
           ))}
         </div>

@@ -7,7 +7,7 @@ import arrowRight from "../assets/arrow-right.png";
 import search from "../assets/search.png";
 import { Link } from "react-router-dom";
 
-const Products = () => {
+const Products = (props) => {
   const { allProducts, selectedProductData, setSelectedProductData } =
     useContext(ProductContext);
   const productsPerPage = 16;
@@ -84,7 +84,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="mt-20 w-11/12 m-auto md:w-10/12">
+      <div className="mt-20 w-11/12 m-auto md:w-10/12" ref={props.productsRef}>
         <div className="flex mb-5 w-2/3 md:w-1/3 rounded-lg overflow-hidden">
           <input
             type="text"
@@ -158,16 +158,20 @@ const Products = () => {
             <Link
               to={`/product/${product.id}`}
               key={product.id}
-              className="bg-white shadow-lg p-3 dark:bg-custom2"
+              className="bg-white shadow-lg p-2 dark:bg-custom2 rounded-lg"
               onClick={() => handleSelectProduct(product)}
             >
-              <div>
-                <img src={product.image} alt="product" />
+              <div className="bg-white py-4">
+                <img
+                  src={product.image}
+                  alt="product"
+                  className="w-[200px] m-auto"
+                />
               </div>
-              <div className="pt-2">
+              <div className="pt-4 w-11/12 m-auto">
                 <h1 className="dark:text-white text-sm">{product.name}</h1>
               </div>
-              <div className="mt-5 mb-2">
+              <div className="mt-5 mb-2 w-11/12 m-auto">
                 <div className="flex flex-col md:flex-row gap-2 mb-2">
                   <div className="flex items-center">
                     <p className="bg-gray-400 px-2 rounded-lg text-white text-sm font-bold">
@@ -211,7 +215,7 @@ const Products = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-end">
+              <div className="flex justify-end w-11/12 m-auto">
                 <p className="text-gray-500 dark:text-white">
                   ¥{product.price}
                 </p>

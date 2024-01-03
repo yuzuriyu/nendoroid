@@ -1,98 +1,120 @@
-import contactIcon from "../assets/contact--dark.png";
-import locationIcon from "../assets/location--dark.png";
-import phoneIcon from "../assets/phone--dark.png";
-import contactWhiteIcon from "../assets/contact--light.png";
-import locationWhiteIcon from "../assets/location--light.png";
-import phoneWhiteIcon from "../assets/phone--light.png";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import locationDark from "../assets/location--dark.png";
+import locationLight from "../assets/location--light.png";
+import banner from "../assets/contact--banner.png";
+import phoneDark from "../assets/phone--dark.png";
+import phoneLight from "../assets/phone--light.png";
+import timeDark from "../assets/time--dark.png";
+import timeLight from "../assets/time--light.png";
 
 export default function Contact() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="w-11/12 m-auto py-10 md:w-10/12">
-      <div className="flex flex-col gap-10 md:flex-row md:gap-10">
-        <div className="md:w-1/2">
-          <h1 className="font-bold text-lg border-b-2 border-orange-400 w-28 dark:text-white">
-            Contact us
+    <>
+      <div className="relative h-[316px]">
+        <img src={banner} alt="" className="w-full h-full object-cover" />
+        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 flex flex-col justify-center">
+          <h1 className="text-5xl font-playfair text-white">Contact</h1>
+        </div>
+      </div>
+      <div className="w-11/12 m-auto py-10 md:w-10/12">
+        <div className="lg:w-1/2 m-auto py-10">
+          <h1 className="text-3xl font-bold mb-4 text-center dark:text-white">
+            Get In Touch With Us
           </h1>
-          <p className="text-sm py-2 mb-4 dark:text-white">
-            Reach out to us for any inquiry
+          <p className="text-sm text-gray-500 text-center dark:text-white">
+            For More Information About Our Product & Services. Please Feel Free
+            To Drop Us An Email. Our Staff Always Be There To Help You Out. Do
+            Not Hesitate!
           </p>
-          <div className="flex flex-col">
+        </div>
+        <div className="flex flex-col md:flex-row py-20 md:w-10/12 m-auto gap-20">
+          <div className="grid grid-cols-1 gap-8 md:w-1/2 h-[250px]">
+            <div className="flex">
+              <div className="mr-4">
+                <img
+                  src={theme === "dark" ? locationLight : locationDark}
+                  alt=""
+                  className="w-6"
+                />
+              </div>
+              <div>
+                <p className="font-bold dark:text-white">Address</p>
+                <p className="text-sm dark:text-white">
+                  236 5th SE Avenue, New York NY10000, United States
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="mr-4">
+                <img
+                  src={theme === "dark" ? phoneLight : phoneDark}
+                  alt=""
+                  className="w-6"
+                />
+              </div>
+              <div>
+                <p className="font-bold dark:text-white">Phone</p>
+                <p className="text-sm dark:text-white">
+                  Mobile: +(84) 546-6789
+                </p>
+                <p className="text-sm dark:text-white">
+                  Hotline: +(84) 456-6789
+                </p>
+              </div>
+            </div>
+            <div className="flex">
+              <div className="mr-4">
+                <img
+                  src={theme === "dark" ? timeLight : timeDark}
+                  alt=""
+                  className="w-6"
+                />
+              </div>
+              <div>
+                <p className="font-bold dark:text-white">Working Time</p>
+                <p className="text-sm dark:text-white">
+                  Monday-Friday: 9:00 - 22:00
+                </p>
+                <p className="text-sm dark:text-white">
+                  Saturday-Sunday: 9:00 - 21:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full flex flex-col md:w-1/2">
+            <p className="text-sm mb-2 dark:text-white">Your Name</p>
             <input
               type="text"
-              placeholder="Full Name"
-              className="border py-2 px-4 mb-4"
+              placeholder="Abc"
+              className="border rounded-lg px-4 py-4 mb-4 flex-1 placeholder:text-sm"
             />
+            <p className="text-sm mb-2 dark:text-white">Email address</p>
             <input
               type="text"
-              placeholder="Your Email"
-              className="border py-2 px-4 mb-4"
+              placeholder="Abc@gmail.com"
+              className="border rounded-lg px-4 py-4 mb-4 flex-1 placeholder:text-sm"
             />
-            <textarea placeholder="Message" className="border py-6 px-4 mb-4" />
-            <button className="bg-orange-400 text-white py-2 flex-1">
+            <p className="text-sm mb-2 dark:text-white">Subject</p>
+            <input
+              type="text"
+              placeholder="This is optional"
+              className="border rounded-lg px-4 py-4 mb-4 flex-1 placeholder:text-sm"
+            />
+            <p className="text-sm mb-2 dark:text-white">Message</p>
+            <textarea
+              type="text"
+              placeholder="Hi! I'd like to ask about"
+              className="border rounded-lg px-4 py-4 mb-4 flex-1 placeholder:text-sm"
+            />
+            <button className="bg-orange-400 text-white px-7 py-3 mt-4 rounded-lg w-[200px]">
               Submit
             </button>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1576.0986937593243!2d-122.40944052872817!3d37.80884532795025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580fc8bb3211d%3A0xbaf631600de6b39e!2sPIER%2039!5e0!3m2!1sen!2sph!4v1702246331808!5m2!1sen!2sph"
-            className="w-full h-96"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
       </div>
-      <div className="grid grid-cols-2 py-10 gap-4 md:grid-cols-3">
-        <div className="flex">
-          <div className="mr-2">
-            {theme === "dark" ? (
-              <img src={locationWhiteIcon} alt="location icon" />
-            ) : (
-              <img src={locationIcon} alt="location icon" />
-            )}
-          </div>
-          <div>
-            <h1 className="font-bold dark:text-white">Location</h1>
-            <p className="text-sm dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="mr-2">
-            {theme === "dark" ? (
-              <img src={contactWhiteIcon} alt="contact icon" />
-            ) : (
-              <img src={contactIcon} alt="contact icon" />
-            )}
-          </div>
-          <div>
-            <h1 className="font-bold  dark:text-white">Contact</h1>
-            <p className="text-sm dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="mr-2">
-            {theme === "dark" ? (
-              <img src={phoneWhiteIcon} alt="phone icon" />
-            ) : (
-              <img src={phoneIcon} alt="phone icon" />
-            )}
-          </div>
-          <div>
-            <h1 className="font-bold  dark:text-white">Phone</h1>
-            <p className="text-sm dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

@@ -38,21 +38,6 @@ const Header = () => {
     fetchUserPhotoURL();
   }, [auth.currentUser]);
 
-  useEffect(() => {
-    const fetchUserDisplayName = async () => {
-      try {
-        if (auth.currentUser) {
-          setUserDisplayName(auth.currentUser.displayName || null);
-        } else {
-          setUserDisplayName(null);
-        }
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchUserDisplayName();
-  }, [auth.currentUser]);
   return (
     <>
       <div className="w-11/12 flex justify-between items-center md:w-10/12 py-5 m-auto">

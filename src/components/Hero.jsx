@@ -1,8 +1,19 @@
 /** @format */
 
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import Products from "./Products";
 
 const Hero = () => {
+  const productsRef = useRef(null);
+
+  const hideProducts = true;
+
+  const scrollToProducts = () => {
+    productsRef.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <div className="w-11/12 m-auto relative md:flex md:w-10/12 lg:flex md:gap-20 lg:gap-52 py-16">
@@ -17,18 +28,22 @@ const Hero = () => {
               Excellence, Each Figurine a Symphony of Precision and Charm.
             </p>
             <div className="flex items-center">
-              <Link to={"/register"}>
-                <button className="bg-orange-400 px-12 py-4 text-white hover:bg-orange-500 rounded-lg mr-4">
-                  GET STARTED
-                </button>
-              </Link>
-              <div className="flex items-center group relative cursor-pointer">
-                <p className="mr-2 dark:text-white">Login</p>
+              <button
+                className="bg-orange-400 px-12 py-4 text-white hover:bg-orange-500 rounded-lg mr-4"
+                onClick={() => scrollToProducts()}
+              >
+                Show Now
+              </button>
+              <Link
+                to={"/cart"}
+                className="flex items-center group relative cursor-pointer"
+              >
+                <p className="mr-2 dark:text-white">Cart</p>
                 <p className="text-2xl group-hover:translate-x-2 ease-in-out duration-300 transition dark:text-white">
                   →
                 </p>
                 <div className="border-b dark:border-white border-black absolute left-0 bottom-0 w-0 h-1 transition-all ease-in-out duration-300 group-hover:w-full"></div>
-              </div>
+              </Link>
             </div>
             <div className="w-full m-auto border-2 rounded-lg border-black py-8 px-8 flex mt-10 dark:border-white ">
               <div>
@@ -45,41 +60,52 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full grid grid-cols-2 gap-5 h-[550px] md:w-1/2 mt-10 md:mt-0">
-          <div className="row-start-1 row-end-3 rounded-lg overflow-hidden relative group cursor-pointer">
+          <Link
+            to={"/about"}
+            className="row-start-1 row-end-3 rounded-lg overflow-hidden relative group cursor-pointer"
+          >
             <img
               src="https://mfiles.alphacoders.com/964/964607.png"
               alt=""
               className="h-full w-full object-cover absolute group-hover:scale-110 transition-transform duration-300 ease-in-out"
             />
             <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 transition-transform duration-300 ease-in-out">
-              <h1 className="font-bold">Exclusive</h1>
-              <p className="text-xs text-gray-500">Elite Access</p>
+              <h1 className="font-bold">About</h1>
+              <p className="text-xs text-gray-500">Corporate Narrative</p>
             </div>
-          </div>
-          <div className="rounded-lg overflow-hidden relative group cursor-pointer">
+          </Link>
+          <Link
+            to={"/contact"}
+            className="rounded-lg overflow-hidden relative group cursor-pointer"
+          >
             <img
               src="https://img.goodfon.com/wallpaper/nbig/4/70/fubuki-shirakami-virtualnyi-iutuber-hololive-holo-no-graffit.jpg"
               alt=""
               className="h-full w-full object-cover absolute group-hover:scale-110 transition-transform duration-300 ease-in-out"
             />
             <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 transition-transform duration-300 ease-in-out">
-              <h1 className="font-bold mb-1">Limited</h1>
-              <p className="text-xs text-gray-500">Restricted Edition</p>
+              <h1 className="font-bold mb-1">Contact</h1>
+              <p className="text-xs text-gray-500">Communication Link</p>
             </div>
-          </div>
-          <div className="rounded-lg overflow-hidden relative group cursor-pointer">
+          </Link>
+          <Link
+            to={"/blog"}
+            className="rounded-lg overflow-hidden relative group cursor-pointer"
+          >
             <img
               src="https://e0.pxfuel.com/wallpapers/315/680/desktop-wallpaper-tokoyami-towa.jpg"
               alt=""
               className="h-full w-full object-cover absolute group-hover:scale-125 transition-transform duration-300 ease-in-out"
             />
             <div className="bg-white w-10/12 absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg py-4 px-4 group-hover:-translate-y-4 duration-300 transition-transform ease-in-out">
-              <h1 className="font-bold mb-1">Bonus</h1>
-              <p className="text-xs text-gray-500">Extra Perk</p>
+              <h1 className="font-bold mb-1">Blog</h1>
+              <p className="text-xs text-gray-500">Insights Archive</p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
+
+      <Products productsRef={productsRef} scrollToProducts={scrollToProducts} />
     </>
   );
 };
