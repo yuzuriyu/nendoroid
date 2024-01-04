@@ -394,4 +394,243 @@ export const productData = [
       "Painted plastic non-scale complete product with stand included. Approximately 150mm in height.",
     available: true,
   },
+  {
+    id: 23,
+    name: `【Preorder Campaign】Nendoroid Ninomae Ina’nis DX`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hbe/ha8/9555218890782.jpg",
+    highlight: "It's Tako Time!",
+
+    price: 9900,
+    releaseDate: "Jul 2024",
+    announceDate: "Dec 15, 2023",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined Online Exclusive",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 24,
+    name: `Nendoroid Shiranui Flare`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h97/h58/9435994259486.jpg",
+    highlight: "Noon-nui! This is hololive 3rd Gen's Shiranui Flare!",
+
+    price: 6900,
+    releaseDate: "May 2023",
+    announceDate: "Nov 25, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 25,
+    name: `Nendoroid Nakiri Ayame`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h79/h3d/9413090869278.jpg",
+    highlight: "Greetings, Humans! Yoohoo!",
+
+    price: 7200,
+    releaseDate: "Mar 2023",
+    announceDate: "Sep 16, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 26,
+    name: `Nendoroid Hoshimachi Suisei`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h49/hd1/9431217963038.jpg",
+    highlight:
+      "It's your shooting star, your diamond in the rough, idol VTuber Hoshimachi Suisei!",
+
+    price: 7500,
+    releaseDate: "May 2023",
+    announceDate: "Nov 11, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: true,
+  },
+  {
+    id: 27,
+    name: `Nendoroid Houshou Marine`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hf1/hc3/9285744885790.jpg",
+    highlight: "Ahoy! Houshou Pirate Captain, Houshou Marine here!",
+
+    price: 7500,
+    releaseDate: "May 2022",
+    announceDate: "Jul 30, 2021",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Limited Quantity",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 28,
+    name: `Nendoroid Ookami Mio`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hac/h73/9354410229790.jpg",
+    highlight: "Hellooowl! It is Ookami Mio!",
+
+    price: 6100,
+    releaseDate: "Dec 2022",
+    announceDate: "Mar 31, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Limited Quantity",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height.",
+    available: false,
+  },
+  {
+    id: 29,
+    name: `POP UP PARADE Houshou Marine`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h53/h52/9361755242526.jpg",
+    highlight: `Let's go, shall we? Set sail!!`,
+
+    price: 5500,
+    releaseDate: "Sep 2022",
+    announceDate: "Apr 28, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Limited Quantity",
+    specifications:
+      "Painted plastic non-scale complete product with stand included. Approximately 170mm in height.",
+    available: true,
+  },
+  {
+    id: 30,
+    name: `Nendoroid Oozora Subaru`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hbe/h1a/9335295016990.jpg",
+    highlight: `Sup! I'm Oozora Subaru from hololive 2nd Generation!`,
+
+    price: 6500,
+    releaseDate: "Oct 2022",
+    announceDate: "Jan 27, 2022",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Limited Quantity",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height",
+    available: true,
+  },
+  {
+    id: 31,
+    name: `【Preorder Campaign】Nendoroid Murasaki Shion (Rerelease)`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/hbc/hac/9546410459166.jpg",
+    highlight: `Hellshio! Murasaki Shion here!`,
+
+    price: 8800,
+    releaseDate: "May 2024",
+    announceDate: "Nov 16, 2023",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "RereleaseCannot be CombinedOnline Exclusive",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 100mm in height",
+    available: true,
+  },
+  {
+    id: 32,
+    name: `figma Shiranui Flare`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h18/h7c/9324209078302.jpg",
+    highlight: `Noon-nui! This is Shiranui Flare!`,
+
+    price: 8800,
+    releaseDate: "Feb 2023",
+    announceDate: "Dec 17, 2021",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Bonus Included",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 140mm in height.",
+    available: true,
+  },
+  {
+    id: 33,
+    name: `figma Shiranui Noel`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h2c/h40/9358307131422.jpg",
+    highlight: `All hustle, all muscle! Shirogane Noel's here!`,
+
+    price: 9800,
+    releaseDate: "Apr 2023",
+    announceDate: "Apr 15, 2022",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Bonus Included",
+    specifications:
+      "Painted plastic non-scale articulated figure with stand included. Approximately 140mm in height.",
+    available: true,
+  },
+  {
+    id: 34,
+    name: `Minato Aqua AQUA IRO SUPER DREAM Ver.`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h05/h32/9345253867550.jpg",
+    highlight: `The idol maid Aqua is here!`,
+
+    price: 27500,
+    releaseDate: "Feb 2023",
+    announceDate: "Feb 25, 2022",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic 1/7 scale complete product with stand included. Approximately 240mm in height.",
+    available: true,
+  },
+  {
+    id: 35,
+    name: `Shirogane Noel: Swimsuit Ver.`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/h54/hcd/9457950588958.jpg",
+    highlight: `Danchou's hololive Summer!`,
+
+    price: 19800,
+    releaseDate: "Nov 2023",
+    announceDate: "Feb 03, 2023",
+    manufacturer: "Good Smile Company",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic 1/7 scale complete product with stand included. Approximately 155mm in height.",
+    available: true,
+  },
+  {
+    id: 36,
+    name: `Yukihana Lamy`,
+    image:
+      "https://goodsmileshop.com/medias/sys_master/images/images/ha6/hfb/9509417582622.jpg",
+    highlight: `Love Only Lamy-chan!`,
+
+    price: 35000,
+    releaseDate: "May 2024",
+    announceDate: "Jul 20, 2023",
+    manufacturer: "Max Factory",
+    series: "hololive production",
+    productType: "Cannot be Combined",
+    specifications:
+      "Painted plastic 1/6 scale complete product with stand included. Approximately 220mm in height",
+    available: true,
+  },
 ];

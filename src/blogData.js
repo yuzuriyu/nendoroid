@@ -59,7 +59,7 @@ export const blogData = [
     title: "Behind the Scenes: Crafting Nendoroid Masterpieces",
     author: "Admin",
     date: "3 Nov 2023",
-    category: "Behind-the-Scenes",
+    category: "Product Spotlight",
     content:
       "Take a journey behind the scenes of Nendoroid creation. Learn about the design process, manufacturing intricacies, and the passionate craftsmanship that goes into crafting these miniature masterpieces.",
     image:
@@ -70,7 +70,7 @@ export const blogData = [
     title: "Community Showcase: Spotlight on Nendoroid Collectors",
     author: "Admin",
     date: "7 Nov 2023",
-    category: "Community Spotlights",
+    category: "Collector's Tips",
     content:
       "Celebrate the vibrant Nendoroid community with our featured collector showcase. Discover unique collections, hear personal stories, and get inspired by the diverse displays created by fellow enthusiasts.",
     image:

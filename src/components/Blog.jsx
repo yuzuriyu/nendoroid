@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { BlogContext } from "../context/BlogContext";
 import { ThemeContext } from "../context/ThemeContext";
 import adminDark from "../assets/admin--dark.png";
@@ -30,6 +30,20 @@ export default function Blog() {
   const nextPage = () => setCurrentPage(currentPage + 1);
   const prevPage = () => setCurrentPage(currentPage - 1);
 
+  const [categoryCounts, setCategoryCounts] = useState({});
+
+  useEffect(() => {
+    const counts = {};
+    blog.forEach((data) => {
+      if (data.category in counts) {
+        counts[data.category]++;
+      } else {
+        counts[data.category] = 1;
+      }
+    });
+    setCategoryCounts(counts);
+  }, [blog]);
+
   return (
     <>
       <div className="relative h-[316px]">
@@ -38,7 +52,7 @@ export default function Blog() {
           <h1 className="text-5xl font-playfair">Blog</h1>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row pt-20 m-auto w-11/12 md:w-10/12 gap-10">
+      <div className="flex flex-col md:flex-row py-20 m-auto w-11/12 md:w-10/12 gap-10">
         <div className="w-full m-auto grid grid-cols-1 gap-10 lg:w-1/2">
           {currentPosts.map((data, index) => (
             <div key={index}>
@@ -118,43 +132,24 @@ export default function Blog() {
             )}
           </div>
         </div>
-        <div className="w-11/12 m-auto md:w-1/3 ">
+        <div className="w-11/12 m-auto md:w-1/3">
           <div className="flex items-center border rounded-lg  py-2 px-4 bg-white">
             <input type="text" className="focus:outline-none flex-1" />
             <img src={searchDark} alt="" className="w-5" />
           </div>
           <div className="my-8">
             <h1 className="text-xl py-4 dark:text-white">Categories</h1>
-            <div className="py-4 flex items-center justify-between">
-              <p className="text-sm text-gray-500 dark:text-white">
-                Product Spotlight
-              </p>
-              <p className="text-sm text-gray-500 dark:text-white">2</p>
-            </div>
-            <div className="py-4 flex items-center justify-between">
-              <p className="text-sm text-gray-500 dark:text-white">
-                Collector's Tips
-              </p>
-              <p className="text-sm text-gray-500 dark:text-white">2</p>
-            </div>
-            <div className="py-4 flex items-center justify-between">
-              <p className="text-sm text-gray-500 dark:text-white">
-                Nendoroid Photography
-              </p>
-              <p className="text-sm text-gray-500 dark:text-white">2</p>
-            </div>
-            <div className="py-4 flex items-center justify-between">
-              <p className="text-sm text-gray-500 dark:text-white">
-                Limited Edition Releases
-              </p>
-              <p className="text-sm text-gray-500 dark:text-white">2</p>
-            </div>
-            <div className="py-4 flex items-center justify-between">
-              <p className="text-sm text-gray-500 dark:text-white">
-                Character Profiles
-              </p>
-              <p className="text-sm text-gray-500 dark:text-white">2</p>
-            </div>
+            {Object.entries(categoryCounts).map(([category, count]) => (
+              <div
+                key={category}
+                className="py-4 flex items-center justify-between"
+              >
+                <p className="text-sm text-gray-500 dark:text-white">
+                  {category}
+                </p>
+                <p className="text-sm text-gray-500 dark:text-white">{count}</p>
+              </div>
+            ))}
           </div>
           <div>
             <h1 className="py-4 text-xl dark:text-white">Recent Post</h1>
@@ -178,7 +173,6 @@ export default function Blog() {
               ))}
             </div>
           </div>
-          <div className="h-full"></div>
         </div>
       </div>
     </>
