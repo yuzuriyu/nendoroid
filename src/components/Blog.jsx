@@ -20,7 +20,7 @@ export default function Blog() {
   const { theme } = useContext(ThemeContext);
   const [currentPage, setCurrentPage] = useState(1);
 
-  const postsPerPage = 3;
+  const postsPerPage = 2;
   const totalPages = Math.ceil(blog.length / postsPerPage);
 
   const indexOfLastPost = currentPage * postsPerPage;
@@ -52,7 +52,7 @@ export default function Blog() {
           <h1 className="text-5xl font-playfair">Blog</h1>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row py-20 m-auto w-11/12 md:w-10/12 gap-10">
+      <div className="flex flex-col md:flex-row py-20 m-auto w-11/12 md:w-10/12 gap-10 items-start">
         <div className="w-full m-auto grid grid-cols-1 gap-10 lg:w-1/2">
           {currentPosts.map((data, index) => (
             <div key={index}>
@@ -132,7 +132,7 @@ export default function Blog() {
             )}
           </div>
         </div>
-        <div className="w-11/12 m-auto md:w-1/3">
+        <div className="w-11/12 md:w-1/3">
           <div className="flex items-center border rounded-lg  py-2 px-4 bg-white">
             <input type="text" className="focus:outline-none flex-1" />
             <img src={searchDark} alt="" className="w-5" />
